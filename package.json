@@ -1,0 +1,11 @@
+{
+    "dependencies": {
+        "envify": "~1.2.1",
+        "react": "~0.10.0",
+        "watchify": "0.10.1",
+        "browserify": "~4.1.10"
+    },
+    "scripts": {
+        "watch": "watchify -dvo built.js test.js"
+    }
+}
