@@ -4,7 +4,7 @@ var d = React.DOM;
 module.exports = React.createClass({
     update: function(e) {
         this.props.update({
-            value: e.target.value
+            value: parseFloat(e.target.value)
         });
     },
     getDefaultProps: function() {
@@ -16,6 +16,7 @@ module.exports = React.createClass({
         return d.div(
             { className: 'react-predicate-editor-string' },
             d.input({
+                type: 'number',
                 value: this.props.value,
                 onChange: this.update
             })
